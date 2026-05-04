@@ -1,0 +1,94 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "ls",
+      "respuesta": "El comando 'ls' lista los archivos y carpetas del directorio actual. Usa 'ls -la' para ver también los archivos ocultos con detalles.",
+      "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+    },
+    {
+      "pregunta": "cd",
+      "respuesta": "El comando 'cd' cambia el directorio de trabajo. Ejemplo: 'cd /home/usuario'. Usa 'cd ..' para subir un nivel.",
+      "url": "https://man7.org/linux/man-pages/man1/cd.1p.html"
+    },
+    {
+      "pregunta": "pwd",
+      "respuesta": "El comando 'pwd' muestra la ruta completa del directorio en el que te encuentras actualmente.",
+      "url": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+    },
+    {
+      "pregunta": "mkdir",
+      "respuesta": "El comando 'mkdir' crea un nuevo directorio. Ejemplo: 'mkdir mi_carpeta'. Usa 'mkdir -p ruta/completa' para crear subdirectorios.",
+      "url": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+    },
+    {
+      "pregunta": "rm",
+      "respuesta": "El comando 'rm' elimina archivos. Usa 'rm -r carpeta' para borrar directorios. ¡Cuidado, no hay papelera de reciclaje!",
+      "url": "https://man7.org/linux/man-pages/man1/rm.1.html"
+    },
+    {
+      "pregunta": "cp",
+      "respuesta": "El comando 'cp' copia archivos o directorios. Ejemplo: 'cp archivo.txt copia.txt'. Usa 'cp -r' para copiar carpetas enteras.",
+      "url": "https://man7.org/linux/man-pages/man1/cp.1.html"
+    },
+    {
+      "pregunta": "mv",
+      "respuesta": "El comando 'mv' mueve o renombra archivos y carpetas. Ejemplo: 'mv viejo.txt nuevo.txt' renombra el archivo.",
+      "url": "https://man7.org/linux/man-pages/man1/mv.1.html"
+    },
+    {
+      "pregunta": "cat",
+      "respuesta": "El comando 'cat' muestra el contenido de un archivo en la terminal. Ejemplo: 'cat README.md'.",
+      "url": "https://man7.org/linux/man-pages/man1/cat.1.html"
+    },
+    {
+      "pregunta": "grep",
+      "respuesta": "El comando 'grep' busca texto dentro de archivos. Ejemplo: 'grep error log.txt' busca la palabra 'error' en el archivo log.txt.",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+    },
+    {
+      "pregunta": "chmod",
+      "respuesta": "El comando 'chmod' cambia los permisos de un archivo. Ejemplo: 'chmod 755 script.sh' da permisos de ejecución.",
+      "url": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+    },
+    {
+      "pregunta": "sudo",
+      "respuesta": "El comando 'sudo' ejecuta un comando con permisos de administrador (root). Ejemplo: 'sudo apt update'.",
+      "url": "https://man7.org/linux/man-pages/man8/sudo.8.html"
+    },
+    {
+      "pregunta": "apt",
+      "respuesta": "El comando 'apt' gestiona paquetes en sistemas Debian/Ubuntu. Usa 'sudo apt install nombre' para instalar programas.",
+      "url": "https://manpages.debian.org/bookworm/apt/apt.8.en.html"
+    },
+    {
+      "pregunta": "ps",
+      "respuesta": "El comando 'ps' muestra los procesos en ejecución. Usa 'ps aux' para ver todos los procesos del sistema.",
+      "url": "https://man7.org/linux/man-pages/man1/ps.1.html"
+    },
+    {
+      "pregunta": "kill",
+      "respuesta": "El comando 'kill' termina un proceso por su PID. Ejemplo: 'kill 1234'. Usa 'kill -9 PID' para forzar la terminación.",
+      "url": "https://man7.org/linux/man-pages/man1/kill.1.html"
+    },
+    {
+      "pregunta": "top",
+      "respuesta": "El comando 'top' muestra en tiempo real los procesos y el uso de CPU/memoria. Pulsa 'q' para salir.",
+      "url": "https://man7.org/linux/man-pages/man1/top.1.html"
+    },
+    {
+      "pregunta": "find",
+      "respuesta": "El comando 'find' busca archivos en el sistema. Ejemplo: 'find / -name archivo.txt' busca 'archivo.txt' en todo el sistema.",
+      "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+    },
+    {
+      "pregunta": "tar",
+      "respuesta": "El comando 'tar' comprime y descomprime archivos. Ejemplo: 'tar -czf backup.tar.gz carpeta/' comprime una carpeta.",
+      "url": "https://man7.org/linux/man-pages/man1/tar.1.html"
+    },
+    {
+      "pregunta": "ssh",
+      "respuesta": "El comando 'ssh' conecta de forma segura a otro equipo por red. Ejemplo: 'ssh usuario@192.168.1.10'.",
+      "url": "https://man7.org/linux/man-pages/man1/ssh.1.html"
+    }
+  ]
+}
