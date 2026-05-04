@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copiar los archivos de la aplicación al contenedor
-COPY app.py .
-COPY base_datos.json .
+COPY src/app.py .
+COPY src/base_datos.json .
 
 # Variable de entorno para la pantalla (X11)
 ENV DISPLAY=:0
