@@ -2,7 +2,34 @@
 
 Chatbot de escritorio en Python con interfaz gráfica (Tkinter) que responde preguntas sobre los comandos más comunes de Linux, con búsqueda inteligente tolerante a erratas.
 
+> [Enlace al repositorio](https://github.com/little-shiny/chatbot-linux)
 ---
+**Contenidos:**
+- [🐧 Chatbot de Comandos Linux](#-chatbot-de-comandos-linux)
+  - [📖 Descripción del proyecto](#-descripción-del-proyecto)
+    - [¿Qué es?](#qué-es)
+    - [¿Qué hace?](#qué-hace)
+    - [¿Cómo funciona?](#cómo-funciona)
+    - [Estructura del repositorio](#estructura-del-repositorio)
+  - [🚀 Instrucciones de instalación y despliegue](#-instrucciones-de-instalación-y-despliegue)
+    - [Requisitos previos](#requisitos-previos)
+    - [1. Clonar el repositorio](#1-clonar-el-repositorio)
+    - [2. Configurar la pantalla (solo Windows)](#2-configurar-la-pantalla-solo-windows)
+    - [3. Construir la imagen con `docker build`](#3-construir-la-imagen-con-docker-build)
+    - [4. Levantar los servicios con `docker compose up`](#4-levantar-los-servicios-con-docker-compose-up)
+    - [5. Acceder a la aplicación](#5-acceder-a-la-aplicación)
+    - [6. Exposición de puertos](#6-exposición-de-puertos)
+  - [🐳 Explicación de los archivos Docker](#-explicación-de-los-archivos-docker)
+    - [`Dockerfile`](#dockerfile)
+    - [`docker-compose.yml`](#docker-composeyml)
+  - [🔧 Posibles problemas y soluciones](#-posibles-problemas-y-soluciones)
+  - [✨ Contribuciones y organización del proyecto](#-contribuciones-y-organización-del-proyecto)
+    - [Flujo de trabajo con ramas](#flujo-de-trabajo-con-ramas)
+    - [Pasos para contribuir](#pasos-para-contribuir)
+    - [Convención de commits](#convención-de-commits)
+    - [Ampliar la base de conocimiento](#ampliar-la-base-de-conocimiento)
+  - [🖼️ Diagrama de arquitectura](#️-diagrama-de-arquitectura)
+
 
 ## 📖 Descripción del proyecto
 
@@ -134,7 +161,7 @@ python app.py
 ```
 
 ---
-## 🔌 Exposición de puertos
+### 6. Exposición de puertos
 
 | Puerto | Protocolo | Uso |
 |--------|-----------|-----|
