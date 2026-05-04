@@ -7,7 +7,7 @@ from difflib import SequenceMatcher
 
 def cargar_base_datos():
     try:
-        with open("base_datos.json", "r", encoding="utf-8") as file:
+        with open("db.json", "r", encoding="utf-8") as file:
             return json.load(file)
     except FileNotFoundError:
         return {"preguntas": []}
