@@ -139,15 +139,15 @@ python app.py
 | Puerto | Protocolo | Uso |
 |--------|-----------|-----|
 | 6000   | TCP       | X11 — protocolo gráfico para mostrar la ventana en el escritorio del host |
-
-Esta aplicación no expone una URL de navegador. En su lugar usa el protocolo **X11**
-para renderizar la ventana gráfica directamente en el escritorio del host a través
-del puerto 6000 (estándar de X11).
-
-En Windows esto se gestiona mediante **VcXsrv**. En Linux con `xhost +local:docker`.
-La variable `DISPLAY` del `docker-compose.yml` indica a qué servidor X11 debe
-conectarse el contenedor.
-
+ 
+Esta aplicación no expone un puerto HTTP de navegador. En su lugar utiliza el protocolo **X11**, que es el estándar para mostrar interfaces gráficas de forma remota en sistemas Unix/Linux.
+ 
+El puerto **6000** es el puerto estándar de X11 y está declarado en el `Dockerfile` con la instrucción `EXPOSE 6000`. Esto indica a Docker que el contenedor usa ese canal para comunicarse con el servidor gráfico del host.
+ 
+En la práctica:
+- En **Windows**, VcXsrv escucha en ese puerto y recibe la ventana del contenedor.
+- En **Linux**, el servidor X11 del sistema operativo hace lo mismo a través de `/tmp/.X11-unix`.
+- La variable `DISPLAY` del `docker-compose.yml` le dice al contenedor a qué dirección y puerto debe enviar la interfaz gráfica.
 --- 
 
 ## 🐳 Explicación de los archivos Docker
@@ -170,6 +170,8 @@ COPY src/db.json .
 
 ENV DISPLAY=:0
 
+EXPOSE 6000
+
 CMD ["python", "app.py"]
 ```
 
@@ -181,6 +183,7 @@ CMD ["python", "app.py"]
 | `COPY src/app.py .` | Copia solo los archivos necesarios, no todo el proyecto |
 | `COPY src/db.json .` | Copia la base de conocimiento al contenedor |
 | `ENV DISPLAY=:0` | Pantalla por defecto (el compose la sobreescribe con la IP real) |
+| `EXPOSE 6000` | Documenta que el contenedor usa el puerto 6000 (X11) para la interfaz gráfica |
 | `CMD ["python", "app.py"]` | Comando que se ejecuta al iniciar el contenedor |
 
 ---
