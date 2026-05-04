@@ -317,8 +317,8 @@ Si el contenedor está corriendo con el volumen montado, el cambio se aplica sin
 
 ```
 ┌─────────────────────────────────────────────┐
-│              Host (Windows/Linux)            │
-│                                              │
+│              Host (Windows/Linux)           │
+│                                             │
 │  ┌─────────────┐      ┌──────────────────┐  │
 │  │  VcXsrv /   │◄─────│  Docker Desktop  │  │
 │  │  X11 server │      │                  │  │
@@ -329,7 +329,7 @@ Si el contenedor está corriendo con el volumen montado, el cambio se aplica sin
 │  ┌─────┴───────┐      │  │  db.json   │  │  │
 │  │   Usuario   │      │  └────────────┘  │  │
 │  └─────────────┘      └──────────────────┘  │
-│                                              │
-│  Volumen: ./src/db.json ──► /app/db.json     │
+│                                             │
+│  Volumen: ./src/db.json ──► /app/db.json    │
 └─────────────────────────────────────────────┘
 ```
