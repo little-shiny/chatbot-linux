@@ -13,10 +13,12 @@ WORKDIR /app
 
 # Copiar los archivos de la aplicación al contenedor
 COPY src/app.py .
-COPY src/base_datos.json .
+COPY src/db.json .
 
 # Variable de entorno para la pantalla (X11)
 ENV DISPLAY=:0
+
+EXPOSE 6000
 
 # Comando para ejecutar la aplicación
 CMD ["python", "app.py"]

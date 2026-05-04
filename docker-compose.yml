@@ -7,10 +7,10 @@ services:
     container_name: chatbot_linux
     # Permite que el contenedor acceda a la pantalla del host (necesario para Tkinter)
     environment:
-      - DISPLAY=${DISPLAY}
+      - DISPLAY=172.25.144.1:0.0
     volumes:
       # Volumen para que los cambios en base_datos.json sean persistentes
-      - ./base_datos.json:/app/base_datos.json
+      - ./src/base_datos.json:/app/base_datos.json
       # Acceso a X11 para mostrar la ventana gráfica
       - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: host
